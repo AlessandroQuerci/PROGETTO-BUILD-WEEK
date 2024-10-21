@@ -38,6 +38,11 @@ article {
   margin-top: 8rem;
   margin-bottom: 6rem;
 }
+
+#exam {
+  text-align: center;
+}
+
 ul {
   margin-top: 4rem;
   margin-right: 1rem;
