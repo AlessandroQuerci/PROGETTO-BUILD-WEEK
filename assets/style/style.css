@@ -1,0 +1,84 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  margin-inline: 150px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.LogoContainer img {
+  width: 15%;
+  margin-top: 32px;
+}
+h1 {
+  font-size: 7rem;
+  line-height: 0.7;
+  margin: 1rem;
+  margin-top: 6rem;
+}
+h1 span {
+  font-weight: 200;
+}
+h3 {
+  font-size: 2.3rem;
+  color: #d20094;
+  margin-bottom: 0px;
+}
+
+article {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.4rem;
+  margin-top: 8px;
+  font-weight: 300;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+ul {
+  margin-top: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+li {
+  margin: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+footer {
+  margin-left: 0;
+}
+
+.checkbox input[type="checkbox"] {
+  appearance: none;
+  border: solid 2px white;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox p {
+  display: inline;
+  vertical-align: super;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.checkbox button {
+  font-size: 1.5rem;
+  background-color: aqua;
+  border: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-right: 3.2rem;
+  padding-bottom: 1rem;
+  padding-left: 3.2rem;
+  margin-left: 220px;
+}
