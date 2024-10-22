@@ -1,158 +1,233 @@
+
 body {
-  background-image: url(../images/bg.jpg);
-  background-size: cover;
-  margin-inline: 150px;
-  color: white;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    background-image: url(../assets/images/bg.jpg);
+    background-size: cover;
+    margin-inline: 150px;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .LogoContainer img {
+    width: 15%;
+    margin-top: 32px;
+  }
+  .LogoContainerResultPage img {
+    width: 15%;
+    margin-top: 32px;
+    display: block;
+    text-align: start;
+  }
+  .mainResultPage {
+    width: auto;
+    margin-bottom: 30px;
+    min-height: 400px;
+  }
+  .result {
+    display:block;
+    text-align: center;
+    
+}  
+
+  h1 {
+    font-size: 7rem;
+    line-height: 0.7;
+    margin: 1rem;
+    margin-top: 6rem;
+  }
+  h1 span {
+    font-weight: 200;
+  }
+  #titleResultPage {
+    font-size: 3rem;
+    line-height: 0.7;
+    margin:1rem;
+    margin-top: 2rem;
+}
+.parResultPage {
+    font-size: xx-large;
+    margin-top:-7px;
+    font-size: 27px;
+}
+.container {
+    display:flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+ .container,div {
+    width: 100%;
+    align-items: center;
+ }
+.first {
+    text-align: start;
+}
+.third{
+    text-align: end;
+}
+#spanQues {
+    font-weight: 100;
+    font-size: 60px;
+}
+#resQuest span {
+    font-weight: 300;
+
+  }
+
+  h3 {
+    font-size: 2.3rem;
+    color: #d20094;
+    margin-bottom: 0px;
+  }
+  
+  article {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.4rem;
+    margin-top: 8px;
+    font-weight: 300;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+  
+  .questions {
+    text-align: start;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 1rem;
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+  }
+  
+  .answers {
+    margin-top: 5rem;
+    margin-right: 1rem;
+    margin-bottom: 5rem;
+    margin-left: 1rem;
+  }
+  
+  .answers div {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 7rem;
+  }
+  
+  .answers button {
+    width: 49rem;
+    height: 5rem;
+    border-radius: 100px;
+    background-color: rgba(83, 83, 83, 0.347);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .answers .noopacityText {
+    opacity: 100%;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .answers button::after {
+    content: "";
+    position: absolute;
+  
+    background: linear-gradient(121deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(83, 83, 83, 1) 100%);
+    height: 107%;
+    width: 102%;
+    border-radius: 100px;
+    z-index: -1;
+  }
+  
+  #exam {
+    text-align: center;
+  }
+  
+  ul {
+    margin-top: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+  }
+  li {
+    margin: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  footer {
+    margin-left: 0;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    appearance: none;
+    border: solid 2px white;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .checkbox p {
+    display: inline;
+    vertical-align: super;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .checkbox button {
+    font-size: 1.5rem;
+    background-color: aqua;
+    border: 0;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    padding-top: 1rem;
+    padding-right: 3.2rem;
+    padding-bottom: 1rem;
+    padding-left: 3.2rem;
+    margin-left: 220px;
+  }
+  #bottoneRateUs {
+    display: block;
+    text-align: center;
+    margin-top: 13px;
+}
+.rateUs {
+    background-color:transparent;
+    color:white;
+    padding:15px 70px;
+    border-color: white;
+    border: solid 2px;
+    box-shadow: 0px 0px 4px white;
+    font-size: 20px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.LogoContainer img {
-  width: 15%;
-  margin-top: 32px;
-}
-h1 {
-  font-size: 7rem;
-  line-height: 0.7;
-  margin: 1rem;
-  margin-top: 6rem;
-}
-h1 span {
-  font-weight: 200;
-}
-h3 {
-  font-size: 2.3rem;
-  color: #d20094;
-  margin-bottom: 0px;
-}
-
-article {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 1.4rem;
-  margin-top: 8px;
-  font-weight: 300;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
-}
-
-.questions {
-  text-align: start;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 1;
-  margin: 1rem;
-  margin-top: 8rem;
-  margin-bottom: 9rem;
-}
-
-.answers {
-  margin-top: 5rem;
-  margin-right: 1rem;
-  margin-bottom: 5rem;
-  margin-left: 1rem;
-}
-
-.answers div {
-  margin: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 7rem;
-}
-
-.answers button {
-  width: 49rem;
-  height: 5rem;
-  border-radius: 100px;
-  background-color: rgba(83, 83, 83, 0.347);
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.answers .noopacityText {
-  opacity: 100%;
-  font-size: 1.7rem;
-  color: rgb(255, 255, 255);
-}
-
-.answers button::after {
-  content: "";
-  position: absolute;
-
-  background: linear-gradient(121deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(83, 83, 83, 1) 100%);
-  height: 107%;
-  width: 102%;
-  border-radius: 100px;
-  z-index: -1;
-}
-
-#exam {
-  text-align: center;
-}
-
-ul {
-  margin-top: 4rem;
-  margin-right: 1rem;
-  margin-bottom: 0;
-  margin-left: 1rem;
-  font-size: 1.4rem;
-}
-li {
-  margin: 0.5rem;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-footer {
-  margin-left: 0;
-}
-
-.checkbox input[type="checkbox"] {
-  appearance: none;
-  border: solid 2px white;
-  width: 20px;
-  height: 20px;
-}
-
-.checkbox p {
-  display: inline;
-  vertical-align: super;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-.checkbox button {
-  font-size: 1.5rem;
-  background-color: aqua;
-  border: 0;
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  padding-top: 1rem;
-  padding-right: 3.2rem;
-  padding-bottom: 1rem;
-  padding-left: 3.2rem;
-  margin-left: 220px;
-}
-
-#questionCount {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70rem;
-}
-
-.ansCounter {
-  font-size: 3rem;
-  font-weight: 700;
-}
+  
+  #questionCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70rem;
+  }
+  
+  .ansCounter {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
