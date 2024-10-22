@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Result Page</title>
-    <link rel="stylesheet" href="resultPage.css"/>
+
+    <link rel="stylesheet" href="./assets/style/style.css"/>
 </head>
 <body>
     <header>
-        <div class="imagineLogo">
+        <div class="LogoContainerResultPage">
         <img src="./img/epicode_logo.png" alt="Logo Epicode"/>
         </div>
     </header>
-    <main>
+    <main class="mainResultPage">
         <div class="result">
-            <h1>Results</h1>
-            <p>The summary of your answers:</p>
+            <h1 id="titleResultPage">Results</h1>
+            <p class="parResultPage">The summary of your answers:</p>
        </div>
        <div class="container">
-        <div>
-            <h2><span>Correct</span></h2>
+        <div class="first">
+            <h2 id="resQuest"><span id="spanQues">Correct</span></h2 id="resQuest">
             <div id="percentagePositive"></div>
             <div id="questionsPositive"></div>
         </div>
@@ -27,8 +35,8 @@
             <div class="positiveOrNegative">
             </div>
         </div>
-        <div>
-            <h2><span>Wrong</span></h2>
+        <div class="third">
+            <h2 id="resQuest"><span id="spanQues">Wrong</span></h2>
             <div id="percentageNegative"></div>
             <div id="questionsNegative"></div>
         </div>
@@ -38,8 +46,8 @@
 
 
     </main>
-    <footer>
-    <button type="submit"> RATE US </button>
+    <footer id="bottoneRateUs">
+    <button type="submit" class="rateUs"> RATE US </button>
 
 
 
