@@ -9,10 +9,30 @@ body {
   font-style: normal;
 }
 
+#bodyfeedback {
+  text-align: center;
+}
 .LogoContainer img {
   width: 15%;
   margin-top: 32px;
 }
+.LogoContainerResultPage img {
+  width: 15%;
+  margin-top: 32px;
+  display: block;
+  text-align: start;
+}
+
+.mainResultPage {
+  width: auto;
+  margin-bottom: 30px;
+  min-height: 400px;
+}
+.result {
+  display: block;
+  text-align: center;
+}
+
 h1 {
   font-size: 7rem;
   line-height: 0.7;
@@ -22,6 +42,133 @@ h1 {
 h1 span {
   font-weight: 200;
 }
+.titlefeedbackpage {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+}
+#Hfeedpage {
+  text-align: left;
+}
+#Hfeedpage img {
+  width: 20%;
+  margin-top: 40px;
+}
+
+#titleResultPage {
+  font-size: 3rem;
+  line-height: 0.7;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+#feedpagemain h1 {
+  font-size: 4rem;
+  margin-bottom: 0px;
+  margin-top: 150px;
+}
+#feedpagemain h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+}
+#feedpagemain p {
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 40px;
+  font-size: 1.9rem;
+  line-height: 7rem;
+}
+
+.stelle img {
+  margin-right: 24px;
+  width: 4%;
+}
+.stelle {
+  padding: 0;
+  margin-top: 32px;
+}
+.star {
+  cursor: pointer;
+}
+
+.star:hover {
+  content: url(../images/star.svg);
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #ff00e7;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 1rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+#Btnlum {
+  margin-top: 40px;
+  height: 65px;
+  padding: 10px 20px;
+  background-color: #00e9ff;
+  border: none;
+  color: black;
+  font-size: 1.7rem;
+  cursor: pointer;
+  font-weight: 700;
+  width: 250px;
+  font-family: inherit;
+}
+
+#Btnlum:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+.parResultPage {
+  font-size: xx-large;
+  margin-top: -7px;
+  font-size: 27px;
+}
+.container {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.container,
+div {
+  width: 100%;
+  align-items: center;
+}
+.first {
+  text-align: start;
+}
+.third {
+  text-align: end;
+}
+#spanQues {
+  font-weight: 100;
+  font-size: 60px;
+}
+#resQuest span {
+  font-weight: 300;
+}
+
 h3 {
   font-size: 2.3rem;
   color: #d20094;
@@ -36,11 +183,61 @@ article {
   margin-top: 8px;
   font-weight: 300;
   margin-top: 8rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
+}
+
+.questions {
+  text-align: start;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 9rem;
+  padding-top: 2rem;
+}
+
+.answers {
+  margin-top: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 12rem;
+  margin-left: 1rem;
+}
+
+.answers div {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.answers button {
+  width: 49rem;
+  height: 5rem;
+  border-radius: 500px;
+  background-color: rgba(83, 83, 83, 0.347);
+  border: solid 3.5px #bcbcbc94;
+  border-bottom-color: rgba(128, 128, 128, 0.304);
+  border-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.answers .noopacityText {
+  opacity: 100%;
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
 }
 
 #exam {
   text-align: center;
+  margin-bottom: -5rem;
 }
 
 ul {
@@ -86,4 +283,54 @@ footer {
   padding-bottom: 1rem;
   padding-left: 3.2rem;
   margin-left: 220px;
+}
+#bottoneRateUs {
+  display: block;
+  text-align: center;
+  margin-top: 13px;
+}
+.rateUs {
+  background-color: transparent;
+  color: white;
+  padding: 15px 70px;
+  border-color: white;
+  border: solid 2px;
+  box-shadow: 0px 0px 4px white;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#questionCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61rem;
+}
+
+.ansCounter {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+#questionCount button {
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.4rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: transparent;
+  border: solid 2px white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+#questionCount button #icons {
+  width: 11%;
+  margin-left: 22px;
 }
