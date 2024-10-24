@@ -1,0 +1,116 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  margin-inline: 150px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.LogoContainer img {
+  width: 15%;
+  margin-top: 32px;
+}
+
+h1 {
+  font-size: 7rem;
+  line-height: 0.7;
+  margin: 1rem;
+  margin-top: 6rem;
+}
+h1 span {
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 2.9rem;
+  color: #d20094;
+  margin: 0;
+}
+
+article {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.7rem;
+  margin-top: 8px;
+  font-weight: 300;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+ul {
+  margin-top: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+li {
+  margin: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+footer {
+  margin-left: 0;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#checkk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxcheck:checked {
+  accent-color: #d20094;
+}
+
+.checkbox #btnWelcomePage {
+  font-size: 1.5rem;
+  background-color: aqua;
+  border: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-right: 3.2rem;
+  padding-bottom: 1rem;
+  padding-left: 3.2rem;
+  margin-left: 330px;
+}
+
+#btnWelcomePage:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+}
+
+#boxcheck {
+  border: solid 2px white;
+}
