@@ -31,7 +31,7 @@ body {
 #feedpagemain h1 {
   font-size: 4rem;
   margin-bottom: 0px;
-  margin-top: 150px;
+  margin-top: 92px;
 }
 #feedpagemain h3 {
   font-size: 2rem;
@@ -61,6 +61,10 @@ body {
 }
 
 .star:hover {
+  content: url(../images/star.svg);
+}
+
+.simplystar {
   content: url(../images/star.svg);
 }
 

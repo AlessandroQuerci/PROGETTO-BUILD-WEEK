@@ -93,7 +93,8 @@ const secondTwoContainer = document.getElementsByClassName("secondTwo");
 const counterAnswer = document.getElementsByClassName("ansCounter");
 const buttonAnswer = document.querySelector(".answers button");
 const totalQuestions = questions.length;
-let userScore = 0;
+let alertShown = false;
+let userScore = parseInt(localStorage.getItem("userScore")) || 0;
 let currentQuestionIndex = 0;
 let selectedAnswer = null;
 let selectedButton = null;
@@ -113,8 +114,10 @@ const updateTimer = () => {
     timeRemaining--;
   } else {
     clearInterval(timerInterval); // Ferma il timer una volta finito
-
-    if (currentQuestionIndex < totalQuestions) {
+    console.log(currentQuestionIndex);
+    console.log(totalQuestions - 1);
+    console.log(currentQuestionIndex < totalQuestions - 1);
+    if (currentQuestionIndex < totalQuestions - 1) {
       nextQuestion(); // Carica la prossima domanda automaticamente
     } else {
       // Se non ci sono altre domande, vai ai risultati
@@ -171,6 +174,7 @@ function loadQuestion() {
       btnAnswer.id = "selected";
     });
   }
+
   questionCounter.textContent = `QUESTION ${currentQuestionIndex + 1}/${totalQuestions}`;
   startTimer();
   return;
@@ -188,7 +192,9 @@ function nextQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
   if (selectedAnswer === currentQuestion.correct_answer) {
     userScore++;
+    localStorage.setItem("userScore", userScore);
   }
+
   selectedAnswer = null;
   currentQuestionIndex++;
   if (currentQuestionIndex < totalQuestions) {
@@ -202,6 +208,7 @@ function nextQuestion() {
     });
   }
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   loadQuestion();
   const nextButton = document.querySelector("#questionCount button");
