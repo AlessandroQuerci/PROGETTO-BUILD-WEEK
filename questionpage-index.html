@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/style-questionpage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
@@ -20,25 +20,30 @@
         <img src="./assets/images/epicode_logo.png" alt="Logo Epicode" />
       </div>
     </header>
+    <div id="timer-container">
+      <div id="label-top">SECONDI</div>
+      <svg width="200" height="200">
+        <circle cx="100" cy="100" r="61" stroke="white" stroke-width="25" fill="none" />
+        <circle id="progress" class="circle" cx="100" cy="100" r="61" stroke="purple" stroke-width="25" fill="none" />
+      </svg>
+      <div id="timer"></div>
+      <div id="label-bottom">RIMANENTI</div>
+    </div>
     <div class="tracker"></div>
     <article id="exam">
-      <h2 class="questions">How can I create a checkbox in HTML?</h2>
+      <h2 class="questions"></h2>
       <div class="answers">
-        <div class="firstTwo">
-          <button><span class="noopacityText">&lt;input type="check"&gt;</span></button>
-          <button><span class="noopacityText">&lt;input type="checkbox"&gt;</span></button>
-        </div>
-        <div class="secondTwo">
-          <button><span class="noopacityText">&lt;checkbox&gt;</span></button>
-          <button><span class="noopacityText">&lt;input type="button"&gt;</span></button>
-        </div>
+        <div class="firstTwo" id="firstTwoAnswer"></div>
+        <div class="secondTwo" id="secondTwoAnswer"></div>
       </div>
     </article>
     <footer>
       <div id="questionCount">
-        <p class="ansCounter">QUESTION 1/10</p>
-        <button>PROSSIMA</a><img src="./assets/images/long-arrow-alt-right-solid.svg" alt="" id="icons" /></button>
+        <p class="ansCounter"></p>
+
+        <button id="questionBtn">PROSSIMA<img src="./assets/images/long-arrow-alt-right-solid.svg" alt="" id="icons" /></button>
       </div>
     </footer>
+    <script src="./assets/javaScript/js-questionpage.js"></script>
   </body>
 </html>

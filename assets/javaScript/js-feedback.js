@@ -1,17 +1,17 @@
-const stelle = document.querySelectorAll('.star');
+const stelle = document.querySelectorAll(".star");
 
-stelle.forEach(function(stella, indice) {
-    stella.addEventListener('click', function() {
-        stelle.forEach(stella => stella.classList.remove('simplystar')); // Resetta tutte le stelle
-        illuminaStelle(indice); // Illumina fino all'indice selezionato
-    });
+stelle.forEach((stella, indice) => {
+  stella.addEventListener("click", function () {
+    stelle.forEach((stella) => stella.classList.remove("simplystar"));
+
+    illuminaStelle(indice);
+  });
 });
 
-// Funzione per illuminare le stelle fino all'indice
 function illuminaStelle(numero) {
-    stelle.forEach(function(stella, indice) {
-        if (indice <= numero) {
-            stella.classList.add('simplystar');
-        }
-    });
+  stelle.forEach((stella, indice) => {
+    if (indice <= numero) {
+      stella.classList.add("simplystar");
+    }
+  });
 }

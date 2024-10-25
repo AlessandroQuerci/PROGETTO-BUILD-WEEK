@@ -1,0 +1,171 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  margin-inline: 150px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.LogoContainerResultPage img {
+  width: 15%;
+  margin-top: 32px;
+  display: block;
+  text-align: start;
+}
+
+.result {
+  display: block;
+  text-align: center;
+  margin-left: 2.4rem;
+}
+
+#titleResultPage {
+  font-size: 4.5rem;
+  line-height: 0.7;
+  margin: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1.3rem;
+}
+
+.parResultPage {
+  font-size: 2.2rem;
+
+  margin-top: 0;
+}
+
+#risultati {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.first {
+  display: flex;
+  justify-content: row;
+  flex-direction: column;
+  line-height: 1;
+}
+
+#textCircle1 {
+  font-size: 0.13em;
+  font-weight: 600;
+  color: white;
+}
+#textCircle2 {
+  font-size: 0.12em;
+  font-weight: 600;
+  color: white;
+}
+#textCircleP {
+  font-size: 0.07em;
+  font-weight: 200;
+  color: white;
+}
+#textCircleCenter {
+  font-size: 0.08em;
+  font-weight: 400;
+  color: white;
+}
+
+.donut {
+  width: 47%;
+}
+
+.donut-hole {
+  opacity: 0%;
+}
+
+#donut-segment {
+  box-shadow: 5px 5px 5px black;
+}
+
+.third {
+  display: flex;
+  flex-direction: column;
+  justify-content: row-reverse;
+  text-align: right;
+  line-height: 1;
+}
+
+#correctS {
+  margin: 0;
+}
+
+#wrongS {
+  margin: 0;
+}
+
+#spanQuest {
+  font-size: 5.3rem;
+  font-weight: 400;
+}
+#spanQuest2 {
+  font-size: 5.3rem;
+  font-weight: 400;
+  color: #dcd2e0;
+}
+
+#positivePercentage {
+  font-size: 5.4rem;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#negativePercentage {
+  font-size: 5.4rem;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #dcd2e0;
+}
+
+#rightOnTotal {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+#wrongOnTotal {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+#bottoneRateUs {
+  display: flex;
+  justify-content: center;
+}
+.rateUs {
+  background-color: transparent;
+  color: white;
+  padding: 15px 70px;
+  border-color: white;
+  border: solid 2px;
+  box-shadow: 0px 0px 4px white;
+  font-size: 33px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+.rateUs:hover {
+  background: #c802ff;
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 0 5px #a820ce, 0 0 25px #a820ce, 0 0 50px #a820ce, 0 0 200px #a820ce;
+}
+
+.rateUs a {
+  text-decoration: none;
+  color: white;
+}

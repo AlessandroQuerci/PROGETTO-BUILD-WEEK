@@ -1,0 +1,166 @@
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  margin-inline: 150px;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.LogoContainer img {
+  width: 15%;
+  margin-top: 32px;
+}
+
+#timer-container {
+  /* Il container delle div */
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.circle {
+  stroke-dasharray: 565.48;
+  stroke-dashoffset: 565.48;
+}
+/* Il timer */
+#timer {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 1; /* Posizionamento sopra il cerchio */
+}
+
+#label-top {
+  /* Posiziona sopra il timer (SECONDI) */
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1; /* Posizionamento sopra il cerchio */
+}
+
+#label-bottom {
+  /* Posizionamento del sotto (RIMANENTI)*/
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
+  padding: 3px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1; /* Posizionamento sopra il cerchio */
+}
+
+.questions {
+  text-align: start;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1;
+  margin: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 9rem;
+  padding-top: 2rem;
+}
+
+.answers {
+  margin-top: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 12rem;
+  margin-left: 1rem;
+}
+
+.answers div {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.answers button {
+  width: 49rem;
+  height: 5rem;
+  border-radius: 500px;
+  background-color: rgba(83, 83, 83, 0.347);
+  border: solid 3.5px #bcbcbc94;
+  border-bottom-color: rgba(128, 128, 128, 0.304);
+  border-bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.answers .noopacityText {
+  opacity: 100%;
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+}
+
+#exam {
+  text-align: center;
+  margin-bottom: -5rem;
+}
+
+#questionCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ansCounter {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: row;
+}
+
+#questionCount button {
+  height: 5.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21.4rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: transparent;
+  border: solid 2px white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+#selected {
+  background-color: #be05e3fa;
+  color: white;
+}
+
+#questionCount button #icons {
+  width: 11%;
+  margin-left: 22px;
+}
+
+#questionCount a {
+  text-decoration: none;
+}
